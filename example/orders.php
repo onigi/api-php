@@ -3,6 +3,8 @@ pre{
 	background-color:#F9F9F9;
 	border:2px dashed #D0D0D0;
 	color:#002166;
+	max-height:150px;
+	overflow:auto;
 }
 </style>
 <?php
