@@ -124,7 +124,7 @@ class Onigi
     CURLOPT_CONNECTTIMEOUT => 10,
     CURLOPT_RETURNTRANSFER => TRUE,
     CURLOPT_TIMEOUT        => 60,
-    CURLOPT_SSL_VERIFYPEER => FALSE,
+    CURLOPT_SSL_VERIFYPEER => TRUE,
     CURLOPT_USERAGENT      => 'onigi-php-1.0'
   );
   
@@ -144,8 +144,8 @@ class Onigi
    * Maps aliases to Onigi domains.
    */
   public static $DOMAIN_MAP = array(
-    'api'       => 'https://dev.onigi.com/api/',
-    'www'       => 'https://dev.onigi.com/'
+    'api'       => 'https://market.onigi.com/api/',
+    'www'       => 'https://market.onigi.com/'
   );
   
   /**
@@ -789,6 +789,7 @@ class Onigi
                      'using bundled information');
       curl_setopt($ch, CURLOPT_CAINFO,
                   dirname(__FILE__) . '/onigi_ca_chain_bundle.crt');
+      
       $result = curl_exec($ch);
     } 
     
