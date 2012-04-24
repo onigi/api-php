@@ -48,7 +48,7 @@ Login or logout url will be needed depending on current user state.
 
 Report Issues/Bugs
 ===============
-[Bugs](http://onigi.com)
+[Bugs](http://onigi.com/hubungi-kami/)
 
-[Questions](http://onigi.com)
+[Questions](http://onigi.com/hubungi-kami/)
 
